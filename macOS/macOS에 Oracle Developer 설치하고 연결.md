@@ -26,7 +26,7 @@ Name은 자신이 원하는 값을 입력하고
 
 사용자 이름과 비밀번호는 전 포스팅에서 설정했다면 그대로 사용자 이름과 비밀번호를 입력하면 된다. 혹은 설정을 따로 하지 않았다면 사용자 이름은 system, 비밀번호는 oracle로 초기 설정돼있을 것이다.
 
-<img src="../images/img-20210404143050974.png" alt="img" style="zoom:50%;" />
+<img src="../images/img-20210404143050974.png" alt="img" style="zoom:50%;"/>
 
 
 
