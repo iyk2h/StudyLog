@@ -12,21 +12,21 @@
 
 새 접속이라는 것인데 전 포스팅에서 설치한 DB서버를 연결해주는 작업이다.
 
-![img](../images/img-20210404150316303.png)
+![img](../images/img-20210404150528638.png)
 
 버튼을 정상적으로 눌렀다면 이런 식으로 새로 만들기/데이터베이스 접속 선택 이 있을 것이다.
 
-<img src="/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404142848347.png" alt="img" style="zoom:50%;" />
+<img src="../images/img-20210404142848347.png" alt="img" style="zoom:50%;" />
 
 Name은 자신이 원하는 값을 입력하고
 
-<img src="/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404142951011.png" alt="img" style="zoom:50%;" />
+<img src="../images/img-20210404142951011.png" alt="img" style="zoom:50%;" />
 
 
 
 사용자 이름과 비밀번호는 전 포스팅에서 설정했다면 그대로 사용자 이름과 비밀번호를 입력하면 된다. 혹은 설정을 따로 하지 않았다면 사용자 이름은 system, 비밀번호는 oracle로 초기 설정돼있을 것이다.
 
-<img src="/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404143050974.png" alt="img" style="zoom:50%;" />
+<img src="../images/img-20210404143050974.png" alt="img" style="zoom:50%;" />
 
 
 
@@ -34,7 +34,7 @@ Name은 자신이 원하는 값을 입력하고
 
 포트도 전에 DB서버를 설치할 때 설정하지 않았다면 1521을 사용하면 되고 설정을 했다면 설정한 번호 그대로 사용하면 된다. (ex. 전 포스팅 기준 내 포트번호는 5151이다.
 
-<img src="/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404143910598.png" alt="img" style="zoom:50%;" />
+<img src="../images/img-20210404143910598.png" alt="img" style="zoom:50%;" />
 
 접속을 눌러 연결하자! 그럼 끝! 생각보다 쉽게 연결된다. 이제 DB공부를 열심히 하면 된다.!
 
@@ -54,11 +54,11 @@ Name은 자신이 원하는 값을 입력하고
 
 [sqldev-downloads](https://www.oracle.com/tools/downloads/sqldev-downloads.html)
 
-![img](/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404143927308.png)
+![img](../images/img-20210404143927308.png)
 
 다운로드하기 전에 오른쪽 부분에 JDK 가 있으므로 JDK를 먼저 다운로드하고 Developer 을 다운로드하자
 
-![img](/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404144013362.png)
+![img](../images/img-20210404144013362.png)
 
 
 
@@ -76,7 +76,7 @@ Name은 자신이 원하는 값을 입력하고
 $ vim ~/.sqldeveloper/20.4.1/product.conf //$은 쉘을 의미 vim~ 입렵해주세요
 ```
 
-<img src="/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404144020185.png" alt="img" style="zoom:150%;" />
+<img src="../images/img-20210404144020185.png" alt="img" style="zoom:150%;" />
 
 들어가 보면 20줄쯤 SetJavahome 이라고 있다.
 
@@ -98,7 +98,7 @@ SetJavaHome /Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home
 
 프로그램 아이콘 위에서 우클릭 후 패키지 내용 보기를 누른다
 
-![img](/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404144039042.png)
+![img](../images/img-20210404144039042.png)
 
 들어간 후
 
@@ -129,7 +129,7 @@ AddVMOption -Duser.language=ko
 AddVMOption -Duser.country=KR
 ```
 
-![img](/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404144047238.png)
+![img](../images/img-20210404144047238.png)
 
 입력해준다!
 
