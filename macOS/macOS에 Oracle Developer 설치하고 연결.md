@@ -4,13 +4,15 @@
 
 다운로드하고 정상적으로 작동이 된다면 연결하면 된다. 혹시 정상적으로 작동이 되지 않는다면 아래에 내가 겪은 문제와 해결방법을 적어두었다.
 
-![img](/Volumes/GoogleDrive/My Drive/Typola/images/img.png)
+![img](../images/img.png)
+
+
 
 이런 화면이 보이면 좌측 상단에 초록색으로 + 모양이 있을 것이다.
 
 새 접속이라는 것인데 전 포스팅에서 설치한 DB서버를 연결해주는 작업이다.
 
-![img](/Volumes/GoogleDrive/My%20Drive/Typola/images/img-20210404142814273.png)
+![img](../images/img-20210404150316303.png)
 
 버튼을 정상적으로 눌렀다면 이런 식으로 새로 만들기/데이터베이스 접속 선택 이 있을 것이다.
 
