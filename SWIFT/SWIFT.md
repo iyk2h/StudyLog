@@ -28,7 +28,7 @@
 
 ##### [Themes - iOS - Human Interface Guidelines - Apple Developer](https://developer.apple.com/ios/human-interface-guidelines/overview/design-principles/)
 
-##### 앱스토어 심사 지침-App Store 심사 지침](https://developer.apple.com/kr/app-store/review/guidelines/)
+##### [앱스토어 심사 지침-App Store 심사 지침](https://developer.apple.com/kr/app-store/review/guidelines/)
 
 #### 첨부
 

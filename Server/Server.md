@@ -48,7 +48,7 @@
 
 ### 도커 명령어
 
-### ![Untitled](/Volumes/GoogleDrive/My Drive/Typola/images/Untitled.png)도커 사용 가이드
+### ![Untitled](../images/Untitled.png)도커 사용 가이드
 
 [도커(Docker) 입문편: 컨테이너 기초부터 서버 배포까지](https://www.44bits.io/ko/post/easy-deploy-with-docker)
 
