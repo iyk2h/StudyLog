@@ -83,6 +83,7 @@ tuner = kt.Hyperband(
 		directory ='my_dir', # 사용된 parameter 저장할 폴더
 		project_name ='helloworld') # 사용된 parameter 저장할 폴더
 ```
+https://www.notion.so/Hyperband-Successive-Halving-Algorithm-SHA-d8c6a8de0a754d31bddcff40d4f6fc02
 
 ```python
 # 작성한 Hypermodel 출력
