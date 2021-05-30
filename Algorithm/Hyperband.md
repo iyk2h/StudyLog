@@ -30,7 +30,8 @@ keras tuner는 모델을 쉽게 튜닝해주는 프레임 워크이다.
 
 이름처럼 연속 분할 알고리즘이다.(Successive Halving Algorithm)
 
-![ ](..//images/img-20210530230338626.png)
+![ ](../images/img-20210530230338626.png)
+
 
 1. 총탐색에 소요되는 budget 설정. (B) (*budget(epoch, data 등 학습에 투입되는 자원))
 2. n개의 하이퍼 파라미터 설정을 랜덤 하게 뽑는다. (Sk)
@@ -39,7 +40,9 @@ keras tuner는 모델을 쉽게 튜닝해주는 프레임 워크이다.
 5. 중간 loss를 기준으로, 성능이 좋지 않은 하이퍼 파라미터 설정을 반만큼 버림. (Sk+1)
 6. 하나의 하이퍼 파라미터 설정이 남을 때까지 2, 3, 4, 5를 반복.
 
-![2](..//images/img-20210530230312951.png)
+![2](../images/img-20210530230312951.png)
+
+
 
 - Successive Halving Algorithm(SHA)의 단점
     - 알고리즘 자체의 hyperparameter(input) : B와 n (정확히는 B/n)에 따라서 **exploration과 exploitation의 비율**이 정해진다.
@@ -49,17 +52,21 @@ keras tuner는 모델을 쉽게 튜닝해주는 프레임 워크이다.
 
 Successive Halving Algorithm(SHA)의 단점에서 언급된 B와 n의 단점을 보완한 알고리즘 (B와 n을 정해준다)
 
-![3](..//images/img-20210530230303952.png)
+![3](../images/img-20210530230303952.png)
+
+
 
 1. 하나의 하이퍼 파라미터 설정에 최대로 할당할 budget 설정 (R) (*budget(epoch, data 등 학습에 투입되는 자원))
 
 2. SHA의 매 step마다 줄어드는 설정 개수(혹은 늘어나는 budget의 비율) 설정. (etha = ŋ ) (SHA에서는 2)
 
-<img src="..//images/img-20210530225859965.png" alt="3" style="zoom:67%;" />
+<img src="../images/img-20210530225859965.png" alt="3" style="zoom:67%;" />
+
+
 
 3. R과 etha에 따라서 SHA를 반복할 개수 (etha(ŋ) defailt = 3) (1 SHA = 1 bracket으로) 및 각 SHA의 처음 step에서 초기화하는 설정의 개수와 할당되는 budget이 계산됨 **(위의 공식에서 Smax가 bracket)**
 
-<img src="..//images/image-20210530230220874.png" alt="image-20210530230220874" style="zoom:80%;" />
+<img src="../images/image-20210530230220874.png" alt="image-20210530230220874" style="zoom:80%;" />
 
 4. R을 통해서 SHA에 들어갈 B,n 을 위의 공식을 통해 n,r 로 정해줌
 
@@ -67,7 +74,7 @@ Successive Halving Algorithm(SHA)의 단점에서 언급된 B와 n의 단점을 
 
 s는 bracket, i는 (0~s), budget 은 81, etha(ŋ)은 3으로 설정 후 Hyperband를 실행하면 아래 그림과 같다.
 
-![2](..//images/img-2383101.png)
+![2](../images/img-2383101.png)
 
 s가 감소되면 탐색할 범위는 줄어들고 epochs 은 커진다. (반비례)
 
@@ -102,15 +109,15 @@ B =32 n=8 일 경우
 
 **HYPERBAND**는 아래 공식을 통해 n과 r을 구해 SHA에 들어갈 B와n을 구한다. SHA의 B와 n을 일정 비율로 정해주면서 SHA를 이용해 SHA를 연속한다.
 
-<img src="..//images/image-20210530225717500.png" alt="image-20210530225717500" style="zoom:50%;" />
+<img src="../images/image-20210530225717500.png" alt="image-20210530225717500" style="zoom:50%;" />
 
  [KerasTuner코드](./KerasTuner.md) 
 
 참고
 
-HYPERBAND 논문 정리(한글) - [https://pod3275.github.io/paper/2019/05/23/Hyperband.html](https://pod3275.github.io/paper/2019/05/23/Hyperband.html)
+HYPERBAND 논문 정리(한글) - [https:/pod3275.github.io/paper/2019/05/23/Hyperband.html](https:/pod3275.github.io/paper/2019/05/23/Hyperband.html)
 
-SHA논문(영어) - [https://arxiv.org/pdf/1502.07943.pdf](https://arxiv.org/pdf/1502.07943.pdf)
+SHA논문(영어) - [https:/arxiv.org/pdf/1502.07943.pdf](https:/arxiv.org/pdf/1502.07943.pdf)
 
-HYPERBAND논문(영어) - [https://arxiv.org/pdf/1603.06560.pdf](https://arxiv.org/pdf/1603.06560.pdf)
+HYPERBAND논문(영어) - [https:/arxiv.org/pdf/1603.06560.pdf](https:/arxiv.org/pdf/1603.06560.pdf)
 
